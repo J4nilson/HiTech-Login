@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+@media screen and (min-width:681px){ /*para tablet*/
+    div#capa{
+        min-width: 300px;
+        max-width: 600px;
+    }
+    div#capa img{
+        min-width: 30%;
+    }
+    input#limpa{
+        position: relative;
+        top:24vh;
+    }
+}
+@media screen and (min-width:1066px){
+    *{
+        margin:0;
+        padding: 0;
+    }
+    div#capa{
+        background-image: url(background_1.jpg);
+        
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    div#capa{
+        min-width: 600px;
+        max-width: 800px;
+    }
+    div#capa img{
+        position: relative;
+        left:50%;
+        transform:translate(-50%);
+    }
+    label{
+        display: inline-block;
+        text-decoration: none;
+        font-style:initial;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 0;
+        margin-left: 10%;
+        top: 10vh;
+        box-shadow: 0 0 20px black;
+    }
+    input#iusuario,input#isenha{
+        position: relative;
+        left:27%;
+        min-width: 50%;
+    }
+    label#user::after{
+        content: "name";
+    }
+    label#password,label#password::after{
+        position: relative;
+        top:17vh;
+        display: inline;
+        padding-right: 14px;
+    }
+    div#cont{
+        display: block;
+        position: relative;
+        right:13%;
+        
+    }
+    input#ienvia{
+        position: relative;
+        display: inline;
+        min-width: 25%;
+    }
+    input#limpa{
+        position: relative;
+        top: 25.5vh;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        min-width:25%;
+        max-width: 15vw;
+        border-radius: 20px;
+        background-color: black;
+        border-color: white;
+        color:white;
+        min-height: 7vh;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    div.logar {
+        position: relative;
+        left: 0; /* Removendo o deslocamento para a esquerda */
+        transform: none; /* Removendo o transform */
+        z-index: 1; /* Certificando-se de que está acima de outros elementos */
+    }
+    
+
+
+}
+
+
+

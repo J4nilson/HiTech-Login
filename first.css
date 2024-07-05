@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+*{
+    margin:0;
+    padding: 0;
+}
+body,html{
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    background-color:black;
+    background-image: /*linear-gradient(to right,rgb(11, 11, 11),rgb(25, 24, 24),rgb(20, 19, 19));*/url(background_5_1.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow-x:hidden;
+}
+div#linha{
+    display: none;
+}
+@keyframes rodas {
+    0% {
+        box-shadow: 0 0 200px rgb(229, 225, 225);
+    }
+    33% {
+        box-shadow: 0 0 200px rgb(185, 183, 186);
+    }
+    66% {
+        box-shadow: 0 0 200px rgb(146, 143, 146);
+    }
+    100% {
+        box-shadow: 0 0 200px rgb(77, 76, 77);
+    }
+}
+
+/* Estilizando o elemento #capa e aplicando a animação */
+div#capa {
+    background-image: /*linear-gradient(to top, black 10%, rgba(21, 20, 20, 0.856), rgba(12, 12, 12, 0.944), black);*/url(background_2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    min-height: 90vh;
+    min-width: 290px;
+    max-width: 90%;
+    max-height: 700px;
+    border-radius:7%;
+    border: 2px solid rgba(255, 255, 255, 0.393);
+    box-shadow: 0 0 200px rgb(36, 36, 36);
+    animation: rodas 4s infinite; /* Aplica a animação definida acima */
+}
+
+div#capa img{
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+    top:20px;
+    display: inline;
+    width: 20vh;
+    
+}
+
+label{
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 2em;
+    display: block;
+    text-align: center;
+    position: relative;
+    top:8vh
+}
+label#password{
+    position: relative;
+    top:14vh;
+}
+input.pre{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    min-width: 80%;
+    max-width: 80%;
+    height: 30px;
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+    box-shadow: 0px 0px 4px white;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    padding: 5px;
+
+
+}
+input#isenha{
+    position: relative;
+    top:16vh;
+    cursor: pointer;
+}
+input#isenha{
+    color: white;
+}
+
+input#iusuario{
+    position:relative;
+    top: 10vh;
+}
+input#ienvia{
+    position: relative;
+    top: 25vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width:60%;
+    max-width: 15vw;
+    border-radius: 20px;
+    background-color: black;
+    border-color: white;
+    color:white;
+    min-height: 7vh;
+    text-align: center;
+    font-size: 1.5em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input#limpa{
+    position: relative;
+    top: 29vh;
+    left: 27%;
+    color: white;
+    display: inline;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: white;
+    padding: 2px;
+}
+input#limpa:active{
+    background-color: red;
+}
+
+
+
+
+/*Animação de sombras*/
