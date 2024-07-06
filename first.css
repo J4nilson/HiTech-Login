@@ -1,8 +1,16 @@
 @charset "utf-8";
 
+:root{
+    --cor_letra:white;
+}
+
 *{
     margin:0;
     padding: 0;
+}
+a{
+    text-decoration: none;
+    color:var(--cor_letra);
 }
 body,html{
     height: 100vh;
@@ -64,7 +72,7 @@ div#capa img{
 }
 
 label{
-    color: white;
+    color:var(--cor_letra);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
     text-decoration: underline;
@@ -89,7 +97,7 @@ input.pre{
     left:50%;
     transform: translate(-50%);
     box-shadow: 0px 0px 4px white;
-    color: white;
+    color:var(--cor_letra);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     padding: 5px;
@@ -102,7 +110,7 @@ input#isenha{
     cursor: pointer;
 }
 input#isenha{
-    color: white;
+    color: var(--cor_letra);
 }
 
 input#iusuario{
@@ -119,7 +127,7 @@ input#ienvia{
     border-radius: 20px;
     background-color: black;
     border-color: white;
-    color:white;
+    color:var(--cor_letra);
     min-height: 7vh;
     text-align: center;
     font-size: 1.5em;
@@ -129,18 +137,37 @@ input#limpa{
     position: relative;
     top: 29vh;
     left: 27%;
-    color: white;
+    color: var(--cor_letra);
     display: inline;
     background-color: rgba(0, 0, 0, 0);
     border-color: white;
     padding: 2px;
     box-sizing: border-box;
     border-radius: 10px;
+    font-size: 1.5em;
 
 }
 input#limpa:active,input#ienvia:active{
     background-color: white;
     color:black;
+}
+i#email_1{
+    color:rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 1.7em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    padding: 5px 2px;
+
+}
+
+div#email_2{
+    display: inline-block;
+    float: right;
+    position: relative;
+    top:4vh;
+    margin-right: 1%;
 }
 
 
