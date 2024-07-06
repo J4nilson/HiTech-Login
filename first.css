@@ -46,7 +46,7 @@ div#capa {
     min-height: 90vh;
     min-width: 290px;
     max-width: 90%;
-    max-height: 700px;
+    max-height: 100vh;
     border-radius:7%;
     border: 2px solid rgba(255, 255, 255, 0.393);
     box-shadow: 0 0 200px rgb(36, 36, 36);
@@ -134,10 +134,15 @@ input#limpa{
     background-color: rgba(0, 0, 0, 0);
     border-color: white;
     padding: 2px;
+    box-sizing: border-box;
+    border-radius: 10px;
+
 }
-input#limpa:active{
-    background-color: red;
+input#limpa:active,input#ienvia:active{
+    background-color: white;
+    color:black;
 }
+
 
 
 

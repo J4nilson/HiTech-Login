@@ -28,6 +28,7 @@
     div#capa{
         min-width: 600px;
         max-width: 800px;
+
     }
     div#capa img{
         position: relative;
@@ -63,6 +64,7 @@
         display: block;
         position: relative;
         right:13%;
+
         
     }
     input#ienvia{
@@ -91,6 +93,22 @@
         transform: none; /* Removendo o transform */
         z-index: 1; /* Certificando-se de que está acima de outros elementos */
     }
+    @keyframes borda {
+        0%{
+            border-color: rgb(81, 0, 255);
+        }        
+        50%{
+            border-color: blueviolet;
+        }
+        100%{
+            border-color: violet;
+        }
+    }
+    input#ienvia:hover,input#limpa:hover{
+        border-color: red;
+        animation: borda 2s infinite;
+    }
+
     
 
 
