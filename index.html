@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="first.css">
     <link rel="stylesheet" href="other_divice.css">
 </head>
-<body>
+<body onresize="tamanho()">
     <div id="capa">
         <img src="logo_3.png" alt="img">
         <main>
             <form action="aaa.php">
                 <div id="pessoa" class="logar">
                     <label for="iusuario" id="user">User</label>
-                    <input type="text" id="iusuario" class="pre" required minlength="2" pattern=".*@.*" placeholder="Enter username(email)">
+                    <input type="email" id="iusuario" class="pre" required minlength="2" pattern=".*@.*" placeholder="Enter username(email)">
                 </div>
                 <div id="codigo" class="logar">
                     <label for="isenha" id="password">Password</label>
@@ -30,5 +30,12 @@
             </form>
         </main>
     </div>
+    <script>
+        function tamanho(){
+            if(window.innerHeight<=486){
+                capa.style.height=600
+            }
+        }
+    </script>
 </body>
 </html>
