@@ -117,6 +117,9 @@ input#iusuario{
     position:relative;
     top: 10vh;
 }
+input.pre:focus-within{         /*Nova peseudo elemento o focus-witgin: ele serve para fazer configurações quando as coisas estão a ser utilizados ou selecionados dando um foco usei num input para que quando eu for digitar o meu background*/
+    background-color: rgba(0, 0, 0, 0.532);
+}
 input#ienvia{
     position: relative;
     top: 25vh;
@@ -164,9 +167,9 @@ i#email_1{
 
 div#email_2{
     display: inline-block;
-    float: right;
     position: relative;
-    top:4vh;
+    bottom: -20vh;
+    left: 2%;
     margin-right: 1%;
 }
 
