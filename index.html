@@ -22,6 +22,10 @@
                 <div id="codigo" class="logar">
                     <label for="isenha" id="password">Password</label>
                     <input type="password" id="isenha" class="pre" minlength="8" maxlength="15" required autocomplete="new-password" placeholder="Enter password">
+                    <div id="chave">
+                        <a href="#"><i class="material-symbols-outlined" id="chave_2" onclick="troca()">Visibility</i></a>
+                        <a href="#"><i class="material-symbols-outlined" id="chave_3" onclick="troca()">Visibility_off</i></a>
+                    </div>
                 </div>
                 <div id="cont">
                     <input type="submit" name="envia" id="ienvia" value="Login">
@@ -35,6 +39,18 @@
         function tamanho(){
             if(window.innerHeight<=486){
                 capa.style.height=600
+            }
+        }
+        function troca(){
+            if(chave_2.style.display=="inline"){
+                chave_2.style.display="none"
+                chave_3.style.display="inline"
+                isenha.type="password"
+            }
+            else{
+                chave_3.style.display="none"
+                chave_2.style.display="inline"
+                isenha.type="text"
             }
         }
     </script>

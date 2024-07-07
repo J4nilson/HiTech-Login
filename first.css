@@ -49,7 +49,6 @@ div#capa {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     height: 600px;
     min-height: 90vh;
     min-width: 290px;
@@ -59,6 +58,7 @@ div#capa {
     border: 2px solid rgba(255, 255, 255, 0.393);
     box-shadow: 0 0 200px rgb(36, 36, 36);
     animation: rodas 4s infinite; /* Aplica a animação definida acima */
+    transform: translate(-50%, -50%);
 }
 
 div#capa img{
@@ -95,12 +95,12 @@ input.pre{
     height: 30px;
     position: relative;
     left:50%;
-    transform: translate(-50%);
     box-shadow: 0px 0px 4px white;
     color:var(--cor_letra);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     padding: 5px;
+    transform: translate(-50%);
 
 
 }
@@ -124,7 +124,6 @@ input#ienvia{
     position: relative;
     top: 25vh;
     left: 50%;
-    transform: translate(-50%,-50%);
     min-width:60%;
     max-width: 15vw;
     border-radius: 20px;
@@ -135,6 +134,7 @@ input#ienvia{
     text-align: center;
     font-size: 1.5em;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: translate(-50%,-50%);
 }
 input#limpa{
     position: relative;
@@ -172,7 +172,28 @@ div#email_2{
     left: 2%;
     margin-right: 1%;
 }
-
+div#chave{
+    color: white;
+    position: relative;
+    left:80%;
+    top: 12vh;
+    
+}
+i#chave_2{
+    display: none;
+}
+i#chave_3{
+    display: inline;
+    
+}
+input[type="password"] {
+    -webkit-appearance: none; /* Remove aparência padrão em Webkit (Chrome, Safari) */
+    -moz-appearance: none;    /* Remove aparência padrão em Firefox */
+    appearance: none;         /* Remove aparência padrão em browsers suportados */
+}
+input[type="password"]::-ms-reveal {
+    display: none;
+}
 
 
 
